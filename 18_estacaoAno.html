@@ -8,7 +8,7 @@
     //ENTRADA
 
     const hemisferio = prompt("Em qual hemisfério você está? (Norte/Sul)").toLowerCase();
-    const mes = prompt(prompt("Digite o número correspondente ao mês atual:"));
+    const mes = Number(prompt("Digite o número correspondente ao mês atual:"));
 
     //PROCESSAMENTO
 
@@ -25,7 +25,7 @@
             estacao = "Outono";
         } else {
             alert("Mês inválido!");
-            return;
+          
         }
     } else if (hemisferio === "sul") {
         if (mes >= 1 && mes <= 3) {
@@ -38,11 +38,10 @@
             estacao = "Primavera";
         } else {
             alert("Mês inválido!");
-            return;
+           
         }
     } else {
         alert("Hemisfério inválido!");
-        return;
     }
 
     //SAÍDA
